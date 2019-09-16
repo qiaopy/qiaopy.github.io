@@ -1,113 +1,152 @@
-# plainwhite
+# Simple Texture Jekyll Theme
 
-Simplistic jekyll portfolio-style theme for writers.
+![Gem Version](https://img.shields.io/gem/v/jekyll-theme-simple-texture.svg)
 
-**Demo**: [thelehhman.com](https://thelehhman.com)
+Simple Texture is a gem-based responsive simple texture styled Jekyll theme for [Jekyll][Jekyll] 3.3 or above,
+which can also be forked as a boilerplate for older versions of Jekyll.
 
-![plainwhite theme preview](/screenshot.png)
+## Demo
 
+- Starter-kit demo:
+<https://yizeng.github.io/jekyll-theme-simple-texture/>
+- My own personal blog: <https://yizeng.me/blog>
 
-## Installation on Github Pages
+![Screenshot - Home](assets/images/screenshots/home.png)
 
-Add this line to your site's `_config.yml`:
-```yaml
-remote_theme: thelehhman/plainwhite-jekyll
-```
+![Screenshot - Blog](assets/images/screenshots/post.png)
+
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
+### As a Jekyll theme gem (Jekyll >= 3.3)
 
-```ruby
-gem "plainwhite"
-```
+If you are creating a new website or blog,
+please follow the commands below first:
 
-And add this line to your Jekyll site's `_config.yml`:
+1. Install Jekyll and [Bundler][Bundler]
 
-```yaml
-theme: plainwhite
-```
+       gem install jekyll bundler
 
-And then execute:
+2. Create a new Jekyll app
 
-    $ bundle
+       jekyll new jekyllapp
 
-Or install it yourself as:
+3. Enter the new directory
 
-    $ gem install plainwhite
+       cd jekyllapp
 
-## Usage
+4. Then follow the instructions below like existing Jekyll app.
 
-The "plainwhite" key in _config.yml is used to customize the theme data.
-```yaml
-plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
-  date_format: "%b %-d, %Y"
+Then for existing Jekyll apps,
 
-  social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman # format: locale/username
-```
+1. Install Bundler if haven't done so.
 
-**Updating Placeholder Image**
+       gem install bundler
 
-The placeholder portfolio image can be replaced by the desired image by placing it as `assets/portfolio.png` in your jekyll website.
+1. Remove Jekyll auto-generated default pages `404.html`, `about.md` and `index.md` or any your custom layouts or existing theme files.
 
-**Comments (Disqus)**
+1. Remove the existing `Gemfile.lock`.
 
-Comments on posts can be enabled by specifying your disqus_shortname under plainwhite in `_config.yml`. For example,
-```yaml
-plainwhite:
-  disqus_shortname: games
-```
+1. Download the respository [here](https://github.com/yizeng/jekyll-theme-simple-texture/archive/master.zip)
+and locate `starter-kit` folder,
+or download `starter-kit` folder directly [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/yizeng/jekyll-theme-simple-texture/tree/master/starter-kit).
 
-**Google Analytics**
+1. Put everything in the `starter-kit` in the root directory,
+i.e. `jekyllapp` in this example.
 
-It can be enabled by specifying your analytics id under plainwhite in `_config.yml`
-```yaml
-plainwhite:
-  analytics_id: '< YOUR ID >'
-```
+1. Run `bundle install` to install dependencies.
 
-**Sitemap**
+1. Run Jekyll with `bundle exec jekyll serve`
 
-It can be toggled by the following line to under plainwhite in  `_config.yml`
+1. Hack away at <http://localhost:4000>!
 
-```yaml
-plainwhite:
-  sitemap: true
-```
+### As a fork
 
-**Excerpts**
+1. Fork the repo [here](https://github.com/yizeng/jekyll-theme-simple-texture#fork-destination-box)
 
-Excerpts can be enabled by adding the following line to your `_config.yml`
-```yaml
-show_excerpts: true
-```
-**Layouts**
+2. Clone the repo just forked.
 
-- Home
-- Page
-- Post
+       git clone git@github.com:[YOUR_USERNAME]/jekyll-theme-simple-texture.git
+
+3. Delete `starter-kit` folder and `jekyll-theme-simple-texture.gemspec` file (they're for people installing via gem)
+
+4. Install Bundler if haven't done so.
+
+       gem install bundler
+
+5. Update the `Gemfile` to look like the following:
+
+   ```ruby
+   source "https://rubygems.org"
+
+   gem "github-pages", group: :jekyll_plugins
+   ```
+
+6. Run `bundle install` to install dependencies.
+
+7. Run Jekyll with `bundle exec jekyll serve`
+
+8. Hack away at <http://localhost:4000>!
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/thelehhman/plainwhite-jekyll. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at <https://github.com/yizeng/jekyll-theme-simple-texture>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-## Development
+## Credits
 
-To set up your environment to develop this theme, run `bundle install`.
+- [Jekyll][Jekyll]
+  + [jekyll-feed](https://github.com/jekyll/jekyll-feed)
+  + [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from)
+  + [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+  + [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+  + [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+  + [Jekyll-Bootstrap](http://jekyllbootstrap.com/)
+  + [theme-the-program](https://github.com/jekyllbootstrap/theme-the-program)
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `plainwhite.gemspec` accordingly.
+- [Sass](http://sass-lang.com/)
+  + [Normalize.css](https://necolas.github.io/normalize.css/)
+  + [Animate.css](https://daneden.github.io/animate.css/)
+  + [Simple Icons](https://simpleicons.org/)
+  + [Noise Texture Generator](http://www.noisetexturegenerator.com/)
+- JavaScript
+  + [cdnjs](https://cdnjs.com/)
+  + [jQuery](https://jquery.com/)
+  + [fullPage.js](https://alvarotrigo.com/fullPage/)
+  + [pace.js](http://github.hubspot.com/pace/docs/welcome/)
+  + [Modernizr](https://modernizr.com/)
+  + [FancyBox](http://fancybox.net/)
+  + [unveil.js](http://luis-almeida.github.io/unveil/)
+- Fonts
+  + [Font Squirrel](https://www.fontsquirrel.com/)
+  + [Bitter](https://fonts.google.com/specimen/Bitter)
+  + [Junge](https://fonts.google.com/specimen/Junge)
+  + [Ubuntu Condensed](https://fonts.google.com/specimen/Ubuntu+Condensed)
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the
+[MIT License](https://github.com/yizeng/jekyll-theme-simple-texture/blob/master/LICENSE).
 
-## More themes
+    MIT License
 
-- [Texture](https://github.com/thelehhman/texture)
+    Copyright (c) 2017 Yi Zeng
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+[Jekyll]: http://jekyllrb.com/
+[Bundler]: https://bundler.io/
