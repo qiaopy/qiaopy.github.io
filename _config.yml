@@ -23,9 +23,9 @@ sass:
 # Site Data
 url: # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. /blog
-title: Simple Texture
-description: "A gem-based responsive simple texture styled Jekyll theme."
-keywords: 'jekyll,theme,gem-based,blog'
+title: 写字的地方
+description: "博客"
+keywords: 'blog'
 author:
   name:
   job_title:
@@ -47,13 +47,13 @@ author:
     - name: vk
       url:
 home:
-  section1: <h1>Simple Texutre</h1>
-  section2: <h2>A gem-based responsive simple texture styled Jekyll theme</h2>
-  section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/yizeng/jekyll-theme-simple-texture" title="View on GitHub"></a></div>
+  section1: <h1>夜霸槽</h1>
+  section2: <h2>不要去恨那些你不了解的东西</h2>
+  # section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/yizeng/jekyll-theme-simple-texture" title="View on GitHub"></a></div>
 blog:
-  cc_license: http://creativecommons.org/licenses/by-sa/4.0/ # A link to CC License of your choice.
-  cc_license_image: /assets/images/theme/cc-by-sa.png # An image of your CC License. 
-  footer_content: A gem-based responsive simple texture styled <a href="http://jekyllrb.com/">Jekyll</a> theme.
+  # cc_license: http://creativecommons.org/licenses/by-sa/4.0/ # A link to CC License of your choice.
+  # cc_license_image: /assets/images/theme/cc-by-sa.png # An image of your CC License. 
+  footer_content: 人生的出场顺序真的很重要，陪你喝酒的注定不能送你回家
 
 disqus:
   shortname: # e.g. yizeng
