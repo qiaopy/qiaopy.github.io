@@ -8,8 +8,8 @@ redirect_from:
   - /2019/09/17/
 ---
 
-* Kramdown table of contents
-{:toc .toc}
+* toc
+{:toc}
 
 #### 1.新建项目目录 react-demo
 ~~~
