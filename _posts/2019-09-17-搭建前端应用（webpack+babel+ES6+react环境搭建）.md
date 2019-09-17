@@ -7,7 +7,7 @@ tags: [react, webpack, babel]
 redirect_from:
   - /2019/09/17/
 ---
-[toc]
+{:toc .toc}
 #### 1.新建项目目录 react-demo
 ~~~
 mkdir  app    //创建app目录 用来存放项目源文件
@@ -54,7 +54,8 @@ npm install --save-dev webpack-dev-server
 ~~~
 #### 6.编写html、js、css文件
   1. 在dist目录下，新增index.html
-~~~ html
+
+~~~ 
 <!DOCTYPE html>
 <htmllang="en">
 <head>
@@ -67,7 +68,9 @@ npm install --save-dev webpack-dev-server
 <script src="app.bundle.js"></script>
 </html>
 ~~~
+
   2. 修改app目录下的index.js文件
+
 ~~~ javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -79,6 +82,7 @@ class IndexComponent extends React.Component{
 var oBox = document.getElementById("box");
 ReactDOM.render(<IndexComponent/>,oBox)
 ~~~
+
   3. 在app目录下新增index.css文件
 ~~~ css
 h1{
@@ -127,7 +131,7 @@ module.exports = {
 
 #### 8.运行npm start
 
-<img itemprop="image" src="/_posts/文章图片/ReactHelloWolrd.png"/>
+<img itemprop="image" src="/_posts/image/ReactHelloWolrd.png"/>
 
 #### 9.我的理解
 > * babel 就是用来把一些高级的语言转化成普通的语言，它有很多插件，比如 plugin-transform-react-jsx  用来将 jsx 转 js；babel的扩展插件可以在.babelrc文件下加入规则
