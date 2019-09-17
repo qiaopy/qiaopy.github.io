@@ -7,6 +7,7 @@ tags: [react, webpack, babel]
 redirect_from:
   - /2019/09/17/
 ---
+* Kramdown table of contents
 {:toc .toc}
 #### 1.新建项目目录 react-demo
 ~~~
@@ -131,7 +132,7 @@ module.exports = {
 
 #### 8.运行npm start
 
-<img itemprop="image" src="/_posts/image/ReactHelloWolrd.png"/>
+<img itemprop="image" data-src="/_posts/image/ReactHelloWolrd.png"/>
 
 #### 9.我的理解
 > * babel 就是用来把一些高级的语言转化成普通的语言，它有很多插件，比如 plugin-transform-react-jsx  用来将 jsx 转 js；babel的扩展插件可以在.babelrc文件下加入规则
