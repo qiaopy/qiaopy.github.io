@@ -12,19 +12,19 @@ redirect_from:
 {:toc .toc}
 
 # 1.新建项目目录 react-demo
-{% highlight  linenos=table %}
+~~~~~~~~~~~~
 mkdir  app    //创建app目录 用来存放项目源文件
 mkdir  dist   // 创建dist目录  用来存放打包好的文件
 touch  .gitignore  //创建.gitignore  用来添加git 忽略的文件
 touch   webpack.config.js   //创建webpack的配置文件
 cd  app    //进入到app目录  
 touch  index.js  //在app目录中创建 index文件  入口文件
-{% endhighlight %}
+~~~~~~~~~~~~
 
 # 2.初始化项目
-{% highlight javascript  linenos=table %}
+~~~~~~~~~~~~
 npm init -y
-{% endhighlight %}
+~~~~~~~~~~~~
 
 # 3.安装相关依赖
 {% highlight javascript  linenos=table %}
@@ -60,7 +60,7 @@ npm install --save-dev webpack-dev-server
 {% endhighlight %}
 
 # 6.编写html、js、css文件
-## 1. 在dist目录下，新增index.html
+##  在dist目录下，新增index.html
 {% highlight html  linenos=table %}
 <!DOCTYPE html>
 <htmllang="en">
@@ -76,7 +76,7 @@ npm install --save-dev webpack-dev-server
 {% endhighlight %}
 
 
-## 2. 修改app目录下的index.js文件
+##  修改app目录下的index.js文件
 {% highlight javascript  linenos=table %}
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -90,7 +90,7 @@ ReactDOM.render(<IndexComponent/>,oBox)
 {% endhighlight %}
 
 
-## 3. 在app目录下新增index.css文件
+##  在app目录下新增index.css文件
 {% highlight css  linenos=table %}
 h1{
     color: green;
@@ -99,7 +99,7 @@ h1{
 
 
 
-# 7.修改webpack.config.js，具体内容如下
+# 7.修改webpack.config.js
 {% highlight javascript  linenos=table %}
 module.exports = {
     mode: 'development',//仅用于开发环境
@@ -140,7 +140,7 @@ module.exports = {
 
 # 8.运行npm start
 
-![helloWold](/_posts/image/ReactHelloWolrd.png)
+![helloWold](/image/ReactHelloWolrd.png)
 
 # 9.我的理解
 > * babel 就是用来把一些高级的语言转化成普通的语言，它有很多插件，比如 plugin-transform-react-jsx  用来将 jsx 转 js；babel的扩展插件可以在.babelrc文件下加入规则
